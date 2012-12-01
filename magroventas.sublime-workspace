@@ -1,0 +1,944 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ro",
+				"route"
+			],
+			[
+				"sho",
+				"should_not"
+			],
+			[
+				"be",
+				"be_valid"
+			],
+			[
+				"comunidad",
+				"comunidad_id"
+			],
+			[
+				"com",
+				"comunidad_id"
+			],
+			[
+				"descri",
+				"describe"
+			],
+			[
+				"des",
+				"destroy"
+			],
+			[
+				"curr",
+				"current_comunidad"
+			],
+			[
+				"usuari",
+				"usuario_id"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"curre",
+				"current_comunidad"
+			],
+			[
+				"comunida",
+				"comunidads"
+			],
+			[
+				"find",
+				"find_by_email"
+			],
+			[
+				"aut",
+				"autorizar_administrador"
+			],
+			[
+				"show",
+				"show_out"
+			],
+			[
+				"comuni",
+				"comunidads"
+			],
+			[
+				"usua",
+				"usuario_existente"
+			],
+			[
+				"usuar",
+				"usuario_autorizado"
+			],
+			[
+				"comu",
+				"comunidad"
+			],
+			[
+				"usuario",
+				"usuario_existente"
+			],
+			[
+				"usu",
+				"usuario"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"curren",
+				"current_user"
+			],
+			[
+				"relacion",
+				"relacion_comunidad_usuario"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"che",
+				"checkeable"
+			],
+			[
+				"to",
+				"togglePath"
+			],
+			[
+				"ch",
+				"checkeable"
+			],
+			[
+				"autori",
+				"autorizar_administrador"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"adm",
+				"administradores"
+			],
+			[
+				"shou",
+				"should_not"
+			],
+			[
+				"relacio",
+				"relacion_comunidad_usuarios"
+			],
+			[
+				"rela",
+				"relacion_comunidad_usuario"
+			],
+			[
+				"co",
+				"comunidad"
+			],
+			[
+				"comun",
+				"comunidad_a"
+			],
+			[
+				"otro",
+				"otro_usuario"
+			],
+			[
+				"auto",
+				"autorizar_usuario"
+			],
+			[
+				"COM",
+				"Comunidad"
+			],
+			[
+				"current_",
+				"current_comunidad"
+			],
+			[
+				"si",
+				"sign_in"
+			],
+			[
+				"po",
+				"post_contenido"
+			],
+			[
+				"bar",
+				"background	background-color: transparent"
+			],
+			[
+				"ti",
+				"titulo"
+			],
+			[
+				"lig",
+				"lightblue"
+			],
+			[
+				"Com",
+				"Comunidad"
+			],
+			[
+				"acti",
+				"activa"
+			],
+			[
+				"valida",
+				"validates_uniqueness_of"
+			],
+			[
+				"unidad",
+				"unidad_id"
+			],
+			[
+				"bac",
+				"background	background-color: transparent"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"tipo",
+				"tipounidad_id"
+			],
+			[
+				"comunidad_",
+				"comunidad_usuarios_path"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"badge",
+				"badge-link"
+			],
+			[
+				"sy",
+				"system_admin"
+			],
+			[
+				"colo",
+				"color	color: rgb"
+			],
+			[
+				"have_",
+				"have_link"
+			],
+			[
+				"do",
+				"do"
+			],
+			[
+				"un",
+				"unidadB"
+			],
+			[
+				"usuarios",
+				"usuarios_autorizados_unidad_path"
+			],
+			[
+				"text",
+				"text	text-transform: capitalize/upper/lower"
+			],
+			[
+				"vin",
+				"vinculada_no_debe_ser_vinculada"
+			],
+			[
+				"princi",
+				"principal_b"
+			],
+			[
+				"prin",
+				"principal_id"
+			],
+			[
+				"vincu",
+				"vinculada_b"
+			],
+			[
+				"vi",
+				"vincular"
+			],
+			[
+				"vinculada_",
+				"vinculada_c"
+			],
+			[
+				"vincula",
+				"vinculada_b"
+			],
+			[
+				"nueva",
+				"nueva_principal"
+			],
+			[
+				"sort_",
+				"sort_column"
+			],
+			[
+				"html_",
+				"html_safe"
+			],
+			[
+				"html",
+				"html_safe"
+			],
+			[
+				"displ",
+				"display	display: common-types"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"control",
+				"control-label"
+			],
+			[
+				"gra",
+				"gray"
+			],
+			[
+				"let",
+				"letter-spacing"
+			],
+			[
+				"backgr",
+				"background	background-image: url"
+			],
+			[
+				"backg",
+				"background	background: color image repeat attachment position"
+			],
+			[
+				"fo",
+				"font	font-size: size"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"verti",
+				"vertical	vertical-align: type"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"gr",
+				"webkit-linear-gradient"
+			],
+			[
+				"has_",
+				"has_many"
+			],
+			[
+				"uni",
+				"unidad_principal"
+			],
+			[
+				"should",
+				"should_not"
+			],
+			[
+				"otra",
+				"otro_tipounidad"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"Tipo",
+				"Tipounidad"
+			],
+			[
+				"rou",
+				"routes"
+			],
+			[
+				"unl",
+				"unless	unless … end"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/paginas.php",
+			"settings":
+			{
+				"buffer_size": 294,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/paginas/home.php",
+			"settings":
+			{
+				"buffer_size": 33,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/config/routes.php",
+			"settings":
+			{
+				"buffer_size": 1543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/templates/header.php",
+			"settings":
+			{
+				"buffer_size": 829,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
+			"settings":
+			{
+				"buffer_size": 804,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
+			"settings":
+			{
+				"buffer_size": 605,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: PStore.new( .. )"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
+		"/opt/lampp/htdocs/magroventas/application/views/templates/header.php",
+		"/opt/lampp/htdocs/magroventas/application/views/paginas/home_view.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/paginas.php",
+		"/opt/lampp/htdocs/weblog/application/controllers/paginas.php",
+		"/opt/lampp/htdocs/weblog/application/views/templates/header.php",
+		"/opt/lampp/htdocs/weblog/application/views/templates/footer.php",
+		"/opt/lampp/htdocs/weblog/application/views/paginas/saludo.php",
+		"/opt/lampp/htdocs/weblog/application/controllers/welcome.php",
+		"/opt/lampp/htdocs/weblog/application/views/paginas/principal.php",
+		"/opt/lampp/htdocs/weblog/application/config/routes.php",
+		"/opt/lampp/htdocs/weblog/application/controllers/paginas",
+		"/home/mario/rails_projects/comunidadmanager/spec/models/unidad_spec.rb",
+		"/home/mario/rails_projects/comunidadmanager/app/models/comunidad.rb",
+		"/home/mario/rails_projects/comunidadmanager/app/models/account.rb",
+		"/home/mario/rails_projects/comunidadmanager/spec/models/account_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/models/comunidad.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/models/cuenta.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/models/cuentas.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/models/unidad.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/models/unidad_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/models/cuenta_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/config/routes.rb",
+		"/home/codelious/railsprojects/comunidadmanager/db/migrate/20120921194749_create_cuentas.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/models/comunidad_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_usuarios.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_toggle_administrador.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/index.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/controllers/usuarios_controller.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/controllers/comunidads_controller.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_notas.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/shared/_post_form.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_unidads_list.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/javascripts/application.js",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/index.js.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_autorizar_administrador.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/custom-layouts.css.scss",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_form.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/helpers/application_helper.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/models/usuario.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_usuarios_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/db/migrate/20120701035151_create_relacion_comunidad_usuarios.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/controllers/sessions_controller.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/controllers/relacion_comunidad_usuarios_controller.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_show_module_col.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_show_module_col.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/edit.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/show.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/show.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/new.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/show_out.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/sessions/new.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_menu_comunidad.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/show_comunidades_autorizadas.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/show_unidades_autorizadas.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_unidades_autorizadas_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_comunidades_autorizadas_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_unidades_autorizadas.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_comunidades_autorizadas.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/layouts/_navbar_signed.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/custom.css.scss",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/usuarios.css.scss",
+		"/home/codelious/railsprojects/comunidadmanager/app/controllers/relacion_usuario_unidads_controller.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/controllers/tipounidads_controller.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/models/relacion_unidad.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_usuarios_form_permisos.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_comunidads.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/layouts/application.html.erb",
+		"/home/codelious/Documents/ejemplos_ajax/prueba_ajax.html",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/javascripts/usuarios.js.coffee",
+		"/home/codelious/railsprojects/comunidadmanager/public/javascripts/usuarios/index.js",
+		"/home/codelious/railsprojects/comunidadmanager/public/js/usuarios/index.js",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/relacion_comunidad_usuarios/update.js.erb",
+		"/home/codelious/railsprojects/episode-205/store/app/views/products/index.html.erb",
+		"/home/codelious/railsprojects/episode-205/store/app/views/products/index.js.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_desvincular.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_vincular_form.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/models/relacion_comunidad_usuario.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_permisos.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_menu_usuario.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/relacion_unidads/destroy.js.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/javascripts/relacion_comunidad_usuarios.js.coffee",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_profile_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/show.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_profile_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_show_module_col.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/edit.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/index.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_menu_unidad.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/show_usuarios_autorizados.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/show_vinculadas.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/index.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_unidads_module_col.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_usuarios_module_col.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_profile_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/shared/_feed_post.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_administrador.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_menu_comunidads.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/edit.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/new.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_comunidads_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/new.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/_tipounidads.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/_tipounidads_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/index.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/show.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_usuarios_autorizados.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_vinculadas.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_usuarios_header.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/paginas.css.scss",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/sessions.css.scss",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/new.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/paginas/comunidad_desactivada.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/paginas/wellcome.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/edit.html.erb",
+		"/home/codelious/railsprojects/comunidadmanager/config/locales/es.yml",
+		"/home/codelious/railsprojects/comunidadmanager/config/locales/es-CL.yml",
+		"/home/codelious/railsprojects/comunidadmanager/app/helpers/sessions_helper.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/support/utilities.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_comunidads_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_unidad_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_tipounidads_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_autenticacions_spec.rb",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/comunidads.css.scss",
+		"/home/codelious/railsprojects/comunidadmanager/app/assets/javascripts/posts.js.coffee",
+		"/home/codelious/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/codelious/.config/sublime-text-2/Packages/User/Plain text.sublime-settings",
+		"/home/codelious/railsprojects/comunidadmanager/spec/models/usuario_spec.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/codelious/railsprojects/comunidadmanager/app"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"horizontal",
+			"margin: 0 a",
+			").",
+			"content-wrapper",
+			"span5",
+			"control",
+			"administrador? ",
+			"administrador?",
+			"current_user.comunidad",
+			"navbar",
+			"nav-",
+			"logo",
+			"config.action_mailer.delivery_method\n\nconfig.action_mailer",
+			"config.action_mailer.raise_delivery_errors",
+			"mail",
+			".navbar-inner-white",
+			"form",
+			"h3",
+			"nav",
+			"logo",
+			".alert",
+			"alert",
+			"usuario",
+			"input",
+			"but",
+			"					%>",
+			"label",
+			"html",
+			"margin-left",
+			"field_with_error",
+			"field_with",
+			"' %>",
+			"current_",
+			"sort",
+			";",
+			"nav\n\n\n\nnav",
+			"control-gr",
+			"backgrou",
+			"smal",
+			"label",
+			"small",
+			"nav",
+			"briefcase",
+			"user",
+			"rela",
+			"relacion",
+			"show",
+			"box_sizing",
+			"<!"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"current_comunidad"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/paginas.php",
+					"settings":
+					{
+						"buffer_size": 294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/paginas/home.php",
+					"settings":
+					{
+						"buffer_size": 33,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/config/routes.php",
+					"settings":
+					{
+						"buffer_size": 1543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1006,
+								1006
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/templates/header.php",
+					"settings":
+					{
+						"buffer_size": 829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
+					"settings":
+					{
+						"buffer_size": 804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
+					"settings":
+					{
+						"buffer_size": 605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.801152737752,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true
+}

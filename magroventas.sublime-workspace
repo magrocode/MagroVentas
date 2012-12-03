@@ -419,7 +419,15 @@
 			"file": "application/controllers/paginas.php",
 			"settings":
 			{
-				"buffer_size": 294,
+				"buffer_size": 815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/sesion.php",
+			"settings":
+			{
+				"buffer_size": 290,
 				"line_ending": "Unix"
 			}
 		},
@@ -427,7 +435,7 @@
 			"file": "application/views/paginas/home.php",
 			"settings":
 			{
-				"buffer_size": 33,
+				"buffer_size": 293,
 				"line_ending": "Unix"
 			}
 		},
@@ -435,7 +443,7 @@
 			"file": "application/config/routes.php",
 			"settings":
 			{
-				"buffer_size": 1543,
+				"buffer_size": 1629,
 				"line_ending": "Unix"
 			}
 		},
@@ -443,23 +451,24 @@
 			"file": "application/views/templates/header.php",
 			"settings":
 			{
-				"buffer_size": 829,
+				"buffer_size": 880,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
+			"file": "application/views/templates/footer.php",
 			"settings":
 			{
-				"buffer_size": 804,
-				"line_ending": "Unix"
+				"buffer_size": 98,
+				"line_ending": "Unix",
+				"name": "<footer>"
 			}
 		},
 		{
-			"file": "/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
+			"file": "application/config/config.php",
 			"settings":
 			{
-				"buffer_size": 605,
+				"buffer_size": 12815,
 				"line_ending": "Unix"
 			}
 		}
@@ -493,6 +502,12 @@
 	"file_history":
 	[
 		"/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
+		"/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
+		"/opt/lampp/htdocs/cloudapolis/application/config/autoload.php",
+		"/opt/lampp/htdocs/magroventas/application/config/autoload.php",
+		"/home/codelious/.config/sublime-text-2/Packages/User/PHP.sublime-settings",
+		"/home/codelious/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/codelious/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/opt/lampp/htdocs/magroventas/application/views/templates/header.php",
 		"/opt/lampp/htdocs/magroventas/application/views/paginas/home_view.php",
 		"/opt/lampp/htdocs/magroventas/application/controllers/paginas.php",
@@ -613,13 +628,7 @@
 		"/home/codelious/railsprojects/comunidadmanager/spec/support/utilities.rb",
 		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_comunidads_spec.rb",
 		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_unidad_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_tipounidads_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_autenticacions_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/comunidads.css.scss",
-		"/home/codelious/railsprojects/comunidadmanager/app/assets/javascripts/posts.js.coffee",
-		"/home/codelious/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
-		"/home/codelious/.config/sublime-text-2/Packages/User/Plain text.sublime-settings",
-		"/home/codelious/railsprojects/comunidadmanager/spec/models/usuario_spec.rb"
+		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_tipounidads_spec.rb"
 	],
 	"find":
 	{
@@ -705,7 +714,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -713,15 +722,15 @@
 					"file": "application/controllers/paginas.php",
 					"settings":
 					{
-						"buffer_size": 294,
+						"buffer_size": 815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								524,
+								524
 							]
 						],
 						"settings":
@@ -730,30 +739,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 110.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/views/paginas/home.php",
+					"file": "application/controllers/sesion.php",
 					"settings":
 					{
-						"buffer_size": 33,
+						"buffer_size": 290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33,
-								33
+								249,
+								249
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -763,18 +772,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "application/config/routes.php",
+					"file": "application/views/paginas/home.php",
 					"settings":
 					{
-						"buffer_size": 1543,
+						"buffer_size": 293,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1006,
-								1006
+								217,
+								217
 							]
 						],
 						"settings":
@@ -782,25 +791,51 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "application/views/templates/header.php",
+					"file": "application/config/routes.php",
 					"settings":
 					{
-						"buffer_size": 829,
+						"buffer_size": 1629,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								492,
-								492
+								1521,
+								1521
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 309.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/views/templates/header.php",
+					"settings":
+					{
+						"buffer_size": 880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
 							]
 						],
 						"settings":
@@ -813,54 +848,48 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 4,
-					"file": "/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
+					"buffer": 5,
+					"file": "application/views/templates/footer.php",
 					"settings":
 					{
-						"buffer_size": 804,
+						"buffer_size": 98,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								36,
+								36
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "<footer>",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
+					"buffer": 6,
+					"file": "application/config/config.php",
 					"settings":
 					{
-						"buffer_size": 605,
+						"buffer_size": 12815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								403,
-								403
+								7547,
+								7547
 							]
 						],
 						"settings":
@@ -868,11 +897,16 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 2940.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -909,7 +943,7 @@
 		"rows":
 		[
 			0.0,
-			0.801152737752,
+			0.716432616723,
 			1.0
 		]
 	},

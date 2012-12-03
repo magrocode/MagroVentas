@@ -39,6 +39,9 @@
 */
 
 $route['default_controller'] = "paginas";
+$route['sesion/(:any)'] = 'sesion/$1';
+$route['paginas/(:any)'] = 'paginas/view/$1';
+
 $route['404_override'] = '';
 
 

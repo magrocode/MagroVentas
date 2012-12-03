@@ -4,11 +4,11 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url('css/bootstrap-responsive.css'); ?>">
 	<title>MagroVentas</title>
 </head>
-<body style="padding-top: 40px;">
+<body style="padding-top: 60px;">
 
-<div class="navbar navbar-fixed-top" style="position: absolute;">
-	<div class="navbar-inner">
-		<div class="container" style="width: auto; padding: 0px 20px;">
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">		
+		<div class="container-fluid">
 			<a class="brand" href="#">MagroVentas</a>
 			<ul class="nav">
 				<li>
@@ -30,6 +30,10 @@
 					<a href="#">Empleados</a>
 				</li>
 			</ul>
+			<p class="navbar-text pull-right">
+				Accediste como
+				<a href="#" class="navbar-link">Mario</a>
+			</p>
 		</div>
 	</div>
 </div>

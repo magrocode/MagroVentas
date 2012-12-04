@@ -501,6 +501,7 @@
 	},
 	"file_history":
 	[
+		"/opt/lampp/htdocs/magroventas/application/config/database.php",
 		"/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
 		"/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
 		"/opt/lampp/htdocs/cloudapolis/application/config/autoload.php",
@@ -627,8 +628,7 @@
 		"/home/codelious/railsprojects/comunidadmanager/app/helpers/sessions_helper.rb",
 		"/home/codelious/railsprojects/comunidadmanager/spec/support/utilities.rb",
 		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_comunidads_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_unidad_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_tipounidads_spec.rb"
+		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_unidad_spec.rb"
 	],
 	"find":
 	{
@@ -714,7 +714,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -756,8 +756,8 @@
 						"selection":
 						[
 							[
-								249,
-								249
+								252,
+								252
 							]
 						],
 						"settings":

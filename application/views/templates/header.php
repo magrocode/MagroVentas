@@ -29,6 +29,9 @@
 				<li>
 					<a href="#">Empleados</a>
 				</li>
+				<li>
+					<a href="#">Empresa</a>
+				</li>
 			</ul>
 			<p class="navbar-text pull-right">
 				Accediste como

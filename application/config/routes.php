@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "paginas";
+$route['default_controller'] = "application";
 $route['sesion/(:any)'] = 'sesion/$1';
 $route['paginas/(:any)'] = 'paginas/view/$1';
 

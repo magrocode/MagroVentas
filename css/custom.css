@@ -29,3 +29,25 @@
 .clear {
 	clear: both;
 }
+
+
+.form-signin {
+  -webkit-box-shadow:rgba(0, 0, 0, 0.0470588) 0 1px 2px;
+  background-color:#FFFFFF;
+  border:1px solid #E5E5E5;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  box-shadow:rgba(0, 0, 0, 0.0470588) 0 1px 2px;
+  margin:0 auto 20px;
+  max-width:300px;
+  padding:19px 29px 29px;
+}
+
+.form-signin input[type="text"], .form-signin input[type="password"] {
+  font-size:16px;
+  height:auto;
+  margin-bottom:15px;
+  padding:7px 9px;
+}

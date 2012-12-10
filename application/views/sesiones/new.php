@@ -1,7 +1,11 @@
+<div class="container">
+
 <?php
    // esto imprime la etiqueta <form method="post" ...
-   echo form_open('sesiones/validar_form',array('id' => 'formlogin'));
+   echo form_open('sesiones/validar_form',array('id' => 'formlogin', 'class' => 'form-signin'));
    // parámetros: dirección a donde se enviara el formulario - atributos
+
+   echo "<h3 class='form-signin-heading'>Por favor autenticate</h3>";
        
    // armamos los campos
    $txtEmail = array(
@@ -30,6 +34,7 @@
        'name'      => 'btSubmit',
        'id'        => 'btSubmit',
        'value'     => 'Iniciar sesion',
+       'class'     => 'btn btn-large btn-primary'
     );
 
     // se imprimen los campos
@@ -51,3 +56,5 @@
     // cerramos el tag form
     echo form_close();// </from>
 ?>
+
+</div>

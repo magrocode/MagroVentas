@@ -13,6 +13,7 @@ class Paginas extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('templates/header');
+		$this->load->view('templates/main_menu', $data);
 		$this->load->view('paginas/home');
 		$this->load->view('templates/footer');
 	}
@@ -29,6 +30,7 @@ class Paginas extends CI_Controller {
 		$data['title'] = ucfirst($pagina); // Capitalize the first letter
 		
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/main_menu', $data);
 		$this->load->view('paginas/'.$pagina, $data);
 		$this->load->view('templates/footer', $data);
 

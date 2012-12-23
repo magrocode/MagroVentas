@@ -39,7 +39,7 @@
 */
 
 $route['default_controller'] = "application";
-$route['sesion/(:any)'] = 'sesion/$1';
+//$route['sesion/(:any)'] = 'sesion/$1';
 $route['paginas/(:any)'] = 'paginas/view/$1';
 
 $route['404_override'] = '';

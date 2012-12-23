@@ -5,21 +5,22 @@ class Application extends CI_Controller {
 	function __construct()
     {
     	parent::__construct();
-
-    	//$this->load->helper('url');
-        //$this->load->helper('html');
-            $this->load->helper('form');
-
-    // cargamos la libreria de validacion de fornmulario
-    $this->load->library('form_validation');
+    	$this->check_isvalidated();
     }
 
 	public function index()
 	{
+		// si esta correctamente logeado
 		$this->load->view('templates/header');
-        $this->load->view('templates/nosignin_menu');
-		$this->load->view('sesiones/new');
-		
+        $this->load->view('templates/main_menu');
+		//$this->load->view('sesiones/new');		
+	}
+
+	private function check_isvalidated(){
+		// valida el estado de la sesion
+		if(! $this->session->userdata('validated')){
+			redirect('sesion');
+		}
 	}
 
 }

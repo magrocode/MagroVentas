@@ -11,9 +11,9 @@ class Application extends CI_Controller {
 	public function index()
 	{
 		// si esta correctamente logeado
+		$data['usuario_nombre'] = $this->session->userdata('nombre');
 		$this->load->view('templates/header');
-        $this->load->view('templates/main_menu');
-		//$this->load->view('sesiones/new');		
+        $this->load->view('templates/main_menu', $data);        		
 	}
 
 	private function check_isvalidated(){

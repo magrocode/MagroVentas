@@ -31,8 +31,10 @@ class Sesion_model extends CI_Model{
 					'fname' => $row->fname,
 					'lname' => $row->lname,
 					'email' => $row->email,
+					'nombre' => $row->nombre,
 					'validated' => true
 					);
+			echo $row->nombre;
 			$this->session->set_userdata($data);
 			return true;
 		}

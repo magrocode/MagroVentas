@@ -1,7 +1,7 @@
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">		
 		<div class="container-fluid">
-			<a class="brand" href="#">MagroVentas</a>
+			<a class="brand" href="<?= base_url() ?>">MagroVentas</a>
 			<div class="nav-collapse collapse navbar-inverse-collapse">
 				<ul class="nav">
 					<li>
@@ -29,8 +29,8 @@
 				<ul class="nav pull-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<?php echo $usuario_nombre; ?>						
-							<b class="caret"/>
+							<?php echo $usuario_nombre; ?>							
+							<b class="caret"></b>	
 						</a>
 						<ul class="dropdown-menu">
 							<li>

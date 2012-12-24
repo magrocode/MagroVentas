@@ -41,14 +41,5 @@ class Sesion extends CI_Controller {
         $this->session->sess_destroy();
         redirect('sesion');
     }
-/*
-	public function signin()
-	{
-		
-	}
 
-	public function signout()
-	{
-
-	} */
 }

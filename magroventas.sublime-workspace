@@ -416,42 +416,10 @@
 	"buffers":
 	[
 		{
-			"file": "application/controllers/paginas.php",
+			"file": "application/controllers/application.php",
 			"settings":
 			{
-				"buffer_size": 917,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/paginas/home.php",
-			"settings":
-			{
-				"buffer_size": 293,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/sesiones/new.php",
-			"settings":
-			{
-				"buffer_size": 1840,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/config/database.php",
-			"settings":
-			{
-				"buffer_size": 3224,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/config/routes.php",
-			"settings":
-			{
-				"buffer_size": 1633,
+				"buffer_size": 609,
 				"line_ending": "Unix"
 			}
 		},
@@ -459,7 +427,55 @@
 			"file": "application/controllers/sesion.php",
 			"settings":
 			{
-				"buffer_size": 432,
+				"buffer_size": 1097,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/sesion_model.php",
+			"settings":
+			{
+				"buffer_size": 1143,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/config/routes.php",
+			"settings":
+			{
+				"buffer_size": 1635,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/sesiones/new.php",
+			"settings":
+			{
+				"buffer_size": 642,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/templates/main_menu.php",
+			"settings":
+			{
+				"buffer_size": 1035,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/templates/header.php",
+			"settings":
+			{
+				"buffer_size": 477,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/templates/nosignin_menu.php",
+			"settings":
+			{
+				"buffer_size": 168,
 				"line_ending": "Unix"
 			}
 		}
@@ -492,15 +508,19 @@
 	},
 	"file_history":
 	[
+		"/opt/lampp/htdocs/magroventas/application/config/autoload.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/sesion.php",
+		"/opt/lampp/htdocs/magroventas/application/config/routes.php",
+		"/opt/lampp/htdocs/magroventas/application/config/database.php",
+		"/opt/lampp/htdocs/magroventas/application/views/sesiones/new.php",
+		"/opt/lampp/htdocs/magroventas/application/views/paginas/home.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/paginas.php",
 		"/opt/lampp/htdocs/magroventas/application/controllers/application.php",
 		"/opt/lampp/htdocs/magroventas/application/config/config.php",
-		"/opt/lampp/htdocs/magroventas/application/config/autoload.php",
-		"/opt/lampp/htdocs/magroventas/application/config/routes.php",
 		"/opt/lampp/htdocs/magroventas/application/views/templates/header.php",
 		"/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
 		"/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
 		"/opt/lampp/htdocs/magroventas/application/views/paginas/home_view.php",
-		"/opt/lampp/htdocs/magroventas/application/controllers/paginas.php",
 		"/opt/lampp/htdocs/weblog/application/controllers/paginas.php",
 		"/opt/lampp/htdocs/weblog/application/views/templates/header.php",
 		"/opt/lampp/htdocs/weblog/application/views/templates/footer.php",
@@ -615,11 +635,7 @@
 		"/home/codelious/railsprojects/comunidadmanager/config/locales/es.yml",
 		"/home/codelious/railsprojects/comunidadmanager/config/locales/es-CL.yml",
 		"/home/codelious/railsprojects/comunidadmanager/app/helpers/sessions_helper.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/support/utilities.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_comunidads_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_unidad_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_tipounidads_spec.rb",
-		"/home/codelious/railsprojects/comunidadmanager/spec/requests/paginas_autenticacions_spec.rb"
+		"/home/codelious/railsprojects/comunidadmanager/spec/support/utilities.rb"
 	],
 	"find":
 	{
@@ -706,15 +722,15 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/paginas.php",
+					"file": "application/controllers/application.php",
 					"settings":
 					{
-						"buffer_size": 917,
+						"buffer_size": 609,
 						"regions":
 						{
 						},
@@ -727,8 +743,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -738,18 +753,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "application/views/paginas/home.php",
+					"file": "application/controllers/sesion.php",
 					"settings":
 					{
-						"buffer_size": 293,
+						"buffer_size": 1097,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								295,
+								295
 							]
 						],
 						"settings":
@@ -764,10 +779,10 @@
 				},
 				{
 					"buffer": 2,
-					"file": "application/views/sesiones/new.php",
+					"file": "application/models/sesion_model.php",
 					"settings":
 					{
-						"buffer_size": 1840,
+						"buffer_size": 1143,
 						"regions":
 						{
 						},
@@ -776,6 +791,59 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/config/routes.php",
+					"settings":
+					{
+						"buffer_size": 1635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1442,
+								1442
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/views/sesiones/new.php",
+					"settings":
+					{
+						"buffer_size": 642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
 							]
 						],
 						"settings":
@@ -791,71 +859,72 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "application/config/database.php",
-					"settings":
-					{
-						"buffer_size": 3224,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "application/config/routes.php",
-					"settings":
-					{
-						"buffer_size": 1633,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 5,
-					"file": "application/controllers/sesion.php",
+					"file": "application/views/templates/main_menu.php",
 					"settings":
 					{
-						"buffer_size": 432,
+						"buffer_size": 1035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								312,
-								312
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/views/templates/header.php",
+					"settings":
+					{
+						"buffer_size": 477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								388
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/views/templates/nosignin_menu.php",
+					"settings":
+					{
+						"buffer_size": 168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
 							]
 						],
 						"settings":

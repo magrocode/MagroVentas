@@ -45,9 +45,21 @@
   padding:19px 29px 29px;
 }
 
-.form-signin input[type="text"], .form-signin input[type="password"] {
+.form-signin input[type="text"], 
+.form-signin input[type="password"]
+ {
   font-size:16px;
   height:auto;
   margin-bottom:15px;
   padding:7px 9px;
+}
+
+#groceryCrudTable_filter input[type="text"],
+#groceryCrudTable input[type="text"],
+#groceryCrudTable_length select
+{
+  margin-bottom:0;
+  font-size:14px;
+  height:auto;
+  padding:3px 6px;
 }

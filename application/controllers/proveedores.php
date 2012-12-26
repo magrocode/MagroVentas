@@ -7,7 +7,6 @@ class Proveedores extends CI_Controller {
 		parent::__construct();
 		
 		$this->load->database();
-		$this->load->helper('url');
 		$this->load->library('grocery_CRUD');	
 	}
 
@@ -18,7 +17,11 @@ class Proveedores extends CI_Controller {
 
 	public function listado()
     {
+    	$this->grocery_crud->set_theme('datatables');
         $this->grocery_crud->set_table('proveedor');
+        $this->grocery_crud->set_relation('companya_id','companya','nombre');
+        $this->grocery_crud->columns('rut','nombre');
+        $this->grocery_crud->display_as('RUT','Nombre');
         $output = $this->grocery_crud->render();
 
         $this->_proveedores_output($output);          

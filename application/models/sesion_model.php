@@ -13,10 +13,12 @@ class Sesion_model extends CI_Model{
 		// se traga los datos de los inputs de login
 		$email = $this->security->xss_clean($this->input->post('email'));
 		$password = $this->security->xss_clean($this->input->post('password'));
+
+		$password_encriptado =  do_hash(do_hash($password), 'md5');
 		
 		// Prepara la query
 		$this->db->where('email', $email);
-		$this->db->where('password', $password);
+		$this->db->where('password', $password_encriptado);
 		
 		// Lanza la query
 		$query = $this->db->get('usuario');

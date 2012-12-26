@@ -18,6 +18,7 @@ class Sesion extends CI_Controller {
 		$this->load->view('templates/header');
 		$this->load->view('templates/nosignin_menu');
 		$this->load->view('sesiones/new', $data);
+		$this->load->view('templates/footer', $data);
 	}
 
 	public function process(){

@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="utf-8" />
 
 <?php
 foreach($css_files as $file): ?>
@@ -13,31 +9,13 @@ foreach($css_files as $file): ?>
         <script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
 
-<style type='text/css'>
-body
-{
-        font-family: Arial;
-        font-size: 14px;
-}
-a {
-        color: blue;
-        text-decoration: none;
-        font-size: 14px;
-}
-a:hover
-{
-        text-decoration: underline;
-}
-</style>
-</head>
-<body>
-        <div style='height:20px;'></div>
-        <div>
-                <?php echo $output; ?>
 
+
+<div class="containter-fluid">
+        <div class="row-fluid">
+                <div class="span2"><p>Aqui algo</p></div>
+                <div class="span10">
+                        <?php echo $output; ?>
+                </div>
         </div>
-<!-- Beginning footer -->
-<div>Footer</div>
-<!-- End of Footer -->
-</body>
-</html>
+</div>

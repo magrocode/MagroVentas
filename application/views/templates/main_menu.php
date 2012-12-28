@@ -14,7 +14,7 @@
 						<a href="#">Productos</a>
 					</li>
 					<li>
-						<a href="#">Proveedores</a>
+						<a href="<?= site_url("proveedores"); ?>">Proveedores</a>
 					</li>
 					<li>
 						<a href="#">Sucursales</a>

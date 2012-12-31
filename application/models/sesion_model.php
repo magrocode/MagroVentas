@@ -5,6 +5,7 @@
  */
 
 class Sesion_model extends CI_Model{
+	
 	function __construct(){
 		parent::__construct();
 	}
@@ -17,11 +18,22 @@ class Sesion_model extends CI_Model{
 		$password_encriptado =  do_hash(do_hash($password), 'md5');
 		
 		// Prepara la query
+		$this->db->select('usuario.id as usuario_id,
+							usuario.email as email, 
+							usuario.nombre as nombre_usuario,
+							usuario.companya_id as companya_id,
+							companya.nombre as nombre_companya', 
+							 FALSE);
+		$this->db->from('usuario');
+		$this->db->join('companya', 'companya.id = usuario.companya_id', 'left');
+
+
 		$this->db->where('email', $email);
 		$this->db->where('password', $password_encriptado);
 		
 		// Lanza la query
-		$query = $this->db->get('usuario');
+		//$query = $this->db->get('usuario');
+		$query = $this->db->get();
 		
 		// Chequeamos si hay algun resultado
 		if($query->num_rows == 1)
@@ -33,10 +45,12 @@ class Sesion_model extends CI_Model{
 					'fname' => $row->fname,
 					'lname' => $row->lname,
 					'email' => $row->email,
-					'nombre' => $row->nombre,
+					'nombre_usuario' => $row->nombre_usuario,
+					'companya_id' => $row->companya_id,
+					'nombre_companya' => $row->nombre_companya,
 					'validated' => true
 					);
-			echo $row->nombre;
+			//echo $row->nombre;
 			$this->session->set_userdata($data);
 			return true;
 		}

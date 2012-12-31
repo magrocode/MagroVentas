@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"com",
+				"companya_id"
+			],
+			[
 				"mensaje_en",
 				"mensaje_encriptado"
 			],
@@ -25,10 +37,6 @@
 			],
 			[
 				"comunidad",
-				"comunidad_id"
-			],
-			[
-				"com",
 				"comunidad_id"
 			],
 			[
@@ -94,10 +102,6 @@
 			[
 				"usu",
 				"usuario"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"curren",
@@ -424,10 +428,10 @@
 	"buffers":
 	[
 		{
-			"file": "application/controllers/examples.php",
+			"file": "assets/grocery_crud/themes/flexigrid/css/flexigrid.css",
 			"settings":
 			{
-				"buffer_size": 3512,
+				"buffer_size": 34241,
 				"line_ending": "Unix"
 			}
 		},
@@ -435,39 +439,7 @@
 			"file": "application/controllers/proveedores.php",
 			"settings":
 			{
-				"buffer_size": 943,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/controllers/paginas.php",
-			"settings":
-			{
-				"buffer_size": 1014,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/proveedores/index.php",
-			"settings":
-			{
-				"buffer_size": 505,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/templates/main_menu.php",
-			"settings":
-			{
-				"buffer_size": 1097,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/grocery_crud/languages/spanish.php",
-			"settings":
-			{
-				"buffer_size": 3606,
+				"buffer_size": 1981,
 				"line_ending": "Unix"
 			}
 		}
@@ -500,13 +472,20 @@
 	},
 	"file_history":
 	[
-		"/opt/lampp/htdocs/magroventas/application/views/proveedores/index.php",
-		"/opt/lampp/htdocs/magroventas/application/config/grocery_crud.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/proveedores.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/productos.php",
+		"/opt/lampp/htdocs/magroventas/application/views/productos/index.php",
 		"/opt/lampp/htdocs/magroventas/application/controllers/paginas.php",
-		"/opt/lampp/htdocs/magroventas/application/controllers/sesion.php",
+		"/opt/lampp/htdocs/magroventas/application/views/proveedores/index.php",
+		"/opt/lampp/htdocs/magroventas/application/views/companya/index.php",
 		"/opt/lampp/htdocs/magroventas/application/controllers/application.php",
-		"/opt/lampp/htdocs/magroventas/application/models/sesion_model.php",
 		"/opt/lampp/htdocs/magroventas/application/views/templates/main_menu.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/examples.php",
+		"/opt/lampp/htdocs/magroventas/application/models/usuario_model.php",
+		"/opt/lampp/htdocs/magroventas/application/models/sesion_model.php",
+		"/opt/lampp/htdocs/magroventas/assets/grocery_crud/languages/spanish.php",
+		"/opt/lampp/htdocs/magroventas/application/config/grocery_crud.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/sesion.php",
 		"/opt/lampp/htdocs/magroventas/application/views/paginas/home.php",
 		"/opt/lampp/htdocs/magroventas/application/config/routes.php",
 		"/opt/lampp/htdocs/magroventas/application/config/autoload.php",
@@ -620,14 +599,7 @@
 		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/index.html.erb",
 		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/show.html.erb",
 		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_usuarios_autorizados.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_vinculadas.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_usuarios_header.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/paginas.css.scss",
-		"/home/codelious/railsprojects/comunidadmanager/app/assets/stylesheets/sessions.css.scss",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/new.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/paginas/comunidad_desactivada.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/paginas/wellcome.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/edit.html.erb"
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_vinculadas.html.erb"
 	],
 	"find":
 	{
@@ -646,6 +618,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"select",
+			".flexigrid table tr.hDiv th div, .flexigrid div.bDiv td div, div.colCopy div",
+			".flexigrid",
+			".flexigrid table",
+			"$nombre",
+			"data",
 			"Record",
 			"true",
 			"horizontal",
@@ -715,32 +693,32 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/examples.php",
+					"file": "assets/grocery_crud/themes/flexigrid/css/flexigrid.css",
 					"settings":
 					{
-						"buffer_size": 3512,
+						"buffer_size": 34241,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								609,
-								609
+								34117,
+								34117
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1050.0,
+						"translation.y": 19532.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -750,15 +728,15 @@
 					"file": "application/controllers/proveedores.php",
 					"settings":
 					{
-						"buffer_size": 943,
+						"buffer_size": 1981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								329,
-								329
+								266,
+								266
 							]
 						],
 						"settings":
@@ -769,115 +747,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "application/controllers/paginas.php",
-					"settings":
-					{
-						"buffer_size": 1014,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								668,
-								668
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/views/proveedores/index.php",
-					"settings":
-					{
-						"buffer_size": 505,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								319,
-								319
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 8,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "application/views/templates/main_menu.php",
-					"settings":
-					{
-						"buffer_size": 1097,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "assets/grocery_crud/languages/spanish.php",
-					"settings":
-					{
-						"buffer_size": 3606,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3604,
-								3604
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 755.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -941,6 +810,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 191.0,
+	"side_bar_width": 318.0,
 	"status_bar_visible": true
 }

@@ -112,7 +112,7 @@ table th
 	position:relative;
 }
 .flexigrid div.mDiv div {
-	padding:6px;
+	padding: 2px;
 	white-space:nowrap;
 }
 .flexigrid div.mDiv div.ptogtitle {
@@ -314,10 +314,10 @@ table th
 	 padding: 5px 5px 5px 5px; 
 	background: #fafafa;
 
-/*	font-size:16px;
+	font-size:16px;
   height:auto;
   margin-bottom:15px;
-  padding:7px 9px; */
+  padding:7px 9px; 
 
 }
 .flexigrid div.form-div textarea
@@ -424,6 +424,7 @@ div.form-div input.datetime-input
 .flexigrid table tr.hDiv th div,.flexigrid div.bDiv td div,div.colCopy div/* common inner cell properties*/ {
 	padding:5px;
 	border-left:0px solid #fff;
+	font-size: 12px;
 }
 .flexigrid div.hDiv th,div.colCopy {
 	font-weight:normal;
@@ -1411,4 +1412,17 @@ input[type="submit"].btn.btn-mini {
 .pretty-radio-buttons label
 {
 	margin-right: 10px;
+}
+
+.flexigrid #filtering_form #per_page,
+.flexigrid #filtering_form #crud_page,
+.flexigrid #filtering_form #crud_page span.pcontrol
+{
+	
+	font-size: 11px;
+    height: 25px;
+    margin-bottom: 0;
+    padding: 1px 2px;
+
+    vertical-align: middle;
 }

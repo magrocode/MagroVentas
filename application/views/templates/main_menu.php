@@ -11,7 +11,7 @@
 						<a href="#">Clientes</a>
 					</li>				
 					<li>
-						<a href="#">Productos</a>
+						<a href="<?= site_url("productos"); ?>">Productos</a>
 					</li>
 					<li>
 						<a href="<?= site_url("proveedores"); ?>">Proveedores</a>
@@ -22,14 +22,14 @@
 					<li>
 						<a href="#">Empleados</a>
 					</li>
-					<li>
-						<a href="#">Empresa</a>
-					</li>
 				</ul>
 				<ul class="nav pull-right">
-					<li class="dropdown">
+					<li>
+						<a href="#"><?= $this->session->userdata('nombre_companya'); ?></a>
+					</li>
+					<li class="dropdown">											
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<?= $this->session->userdata('nombre'); ?>							
+							<?= $this->session->userdata('nombre_usuario'); ?>							
 							<b class="caret"></b>	
 						</a>
 						<ul class="dropdown-menu">

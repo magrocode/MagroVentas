@@ -1416,13 +1416,17 @@ input[type="submit"].btn.btn-mini {
 
 .flexigrid #filtering_form #per_page,
 .flexigrid #filtering_form #crud_page,
-.flexigrid #filtering_form #crud_page span.pcontrol
+.flexigrid #filtering_form #crud_page span.pcontrol,
+.flexigrid #quickSearchBox .sDiv2 input[type="text"],
+.flexigrid #quickSearchBox .sDiv2 select
 {
 	
 	font-size: 11px;
     height: 25px;
     margin-bottom: 0;
+    margin-top: 1px;
     padding: 1px 2px;
 
     vertical-align: middle;
 }
+

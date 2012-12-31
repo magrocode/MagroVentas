@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-bottom"
+			],
+			[
 				"margi",
 				"margin-top"
 			],
@@ -54,10 +58,6 @@
 			[
 				"usuari",
 				"usuario_id"
-			],
-			[
-				"margin",
-				"margin-right"
 			],
 			[
 				"curre",
@@ -427,22 +427,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "assets/grocery_crud/themes/flexigrid/css/flexigrid.css",
-			"settings":
-			{
-				"buffer_size": 34241,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/controllers/proveedores.php",
-			"settings":
-			{
-				"buffer_size": 1981,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -473,6 +457,7 @@
 	"file_history":
 	[
 		"/opt/lampp/htdocs/magroventas/application/controllers/proveedores.php",
+		"/opt/lampp/htdocs/magroventas/assets/grocery_crud/themes/flexigrid/css/flexigrid.css",
 		"/opt/lampp/htdocs/magroventas/application/controllers/productos.php",
 		"/opt/lampp/htdocs/magroventas/application/views/productos/index.php",
 		"/opt/lampp/htdocs/magroventas/application/controllers/paginas.php",
@@ -598,8 +583,7 @@
 		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/_tipounidads_header.html.erb",
 		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/index.html.erb",
 		"/home/codelious/railsprojects/comunidadmanager/app/views/tipounidads/show.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_usuarios_autorizados.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_vinculadas.html.erb"
+		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_usuarios_autorizados.html.erb"
 	],
 	"find":
 	{
@@ -618,6 +602,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
 			"select",
 			".flexigrid table tr.hDiv th div, .flexigrid div.bDiv td div, div.colCopy div",
 			".flexigrid",
@@ -693,64 +678,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "assets/grocery_crud/themes/flexigrid/css/flexigrid.css",
-					"settings":
-					{
-						"buffer_size": 34241,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								34117,
-								34117
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 19532.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/controllers/proveedores.php",
-					"settings":
-					{
-						"buffer_size": 1981,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								266,
-								266
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

@@ -23,7 +23,13 @@
                     <tr>
                         <td><?= $s->codigo ?></td>
                         <td><?= $s->nombre ?></td>
-                        <td><small><a href="#">Mostrar</a> | <a href="<?= site_url("sucursales/editar/". $s->id ); ?>">Editar</a> | <a href="#">Eliminar</a></small></td>
+                        <td>
+                            <small>
+                                <a href="#">Mostrar</a> | 
+                                <a href="<?= site_url("sucursales/editar/". $s->id ); ?>">Editar</a> | 
+                                <a href="#">Eliminar</a>
+                            </small>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>
@@ -31,3 +37,22 @@
         </div>
     </div>
 </div>
+
+<?php
+
+    $campos = array();
+
+    $this->campos["identificador"] = 123456;
+
+
+
+    echo "campos= " . $campos;
+
+    echo "identificador= " . $campos->identificador;
+
+    foreach ($campos as $row)
+    {
+       echo $row->identificador;
+    }
+ 
+?>

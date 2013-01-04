@@ -17,7 +17,7 @@
 						<a href="<?= site_url("proveedores"); ?>">Proveedores</a>
 					</li>
 					<li>
-						<a href="#">Sucursales</a>
+						<a href="<?= site_url("sucursales"); ?>">Sucursales</a>
 					</li>
 					<li>
 						<a href="#">Empleados</a>

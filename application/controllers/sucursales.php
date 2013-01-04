@@ -37,22 +37,44 @@ class Sucursales extends CI_Controller {
 		$this->load->view('templates/main_menu');
 		$this->load->view('sucursales/editar', $data);
 		$this->load->view('templates/footer');
+
  	}
 
  	
  	function actualizar() {
 		//recogemos los datos por POST
-		$data['id'] = $_POST['id'];
-		$data['codigo'] = $_POST['inputCodigo'];
-	 	$data['nombre'] = $_POST['inputNombre'];
+		//$data['id'] = $_POST['id'];
+		//$data['codigo'] = $_POST['inputCodigo'];
+	 	//$data['nombre'] = $_POST['inputNombre'];
 
-		
+	 	$data['sucursal'] = array("id" => $_POST['id'],
+	 							"codigo" => $_POST['inputCodigo'],
+	 							"nombre" => $_POST['inputNombre']
+	 							);
+
+		if ($this->form_validation->run() == FALSE)
+        {
+            $this->load->view('sucursales/editar', $data);
+        }
+        else
+        {
+        	$this->load->model('sucursal_model');
+			$this->sucursal_model->update($data);
+
+			$this->load->view('templates/header');
+			$this->load->view('templates/main_menu');
+            $this->load->view('templates/form_success');
+            $this->load->view('templates/footer');
+        }
+
+
+
 		//cargamos el modelo y llamamos a la función update()
-		$this->load->model('sucursal_model');
-		$this->sucursal_model->update($data);
+		//$this->load->model('sucursal_model');
+		//$this->sucursal_model->update($data);
 		
 		//volvemos a cargar la primera vista
-		$this->index();
+		//$this->index();
 	}
 
 }

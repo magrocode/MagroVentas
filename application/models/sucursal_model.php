@@ -26,6 +26,7 @@ class Sucursal_model extends CI_Model{
 		$this->db->from('sucursal');
 		$this->db->where('id = ' . $idSucursal);
 		$sucursal = $this->db->get();
+		
 		return $sucursal->result();
 	}
 

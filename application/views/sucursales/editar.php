@@ -10,7 +10,9 @@
             <div class="page-header">
                 <h1>Editar Sucursal</h1>
             </div>
-			
+
+			<?php echo validation_errors(); ?>
+
 			<form class="form-horizontal" action="<?= site_url("sucursales/actualizar"); ?>" method="POST">
 			  	<div class="control-group">
 			    	<label class="control-label" for="inputCodigo">Codigo</label>

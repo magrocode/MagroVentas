@@ -29,7 +29,7 @@ class Sesion extends CI_Controller {
 		// Ahora verificamos el resultado
 		if(! $result){
 			// Si el usuario no valida, entonces muestra la pagina de login otra vez
-			$msg = '<font color=red>Email y/o Password invalido</font><br />';
+			$msg = '<div class="alert alert-error">Email y/o Password invalido</div>';
 			$this->index($msg);
 		}else{
 			// Si el usuario se valida

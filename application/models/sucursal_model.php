@@ -21,21 +21,34 @@ class Sucursal_model extends CI_Model{
 	 	return $sucursales->result(); //devolvemos el resultado de lanzar la query.
 	}
 
-	function obtenerSucursal($idSucursal) {
-		$this->db->select('id, codigo, nombre');
+	function obtenerSucursal($sucursal_id) {
+		$this->db->select('id, companya_id, codigo, nombre');
 		$this->db->from('sucursal');
-		$this->db->where('id = ' . $idSucursal);
+		$this->db->where('id = ' . $sucursal_id);
 		$sucursal = $this->db->get();
 		
 		return $sucursal->result();
 	}
 
-	function update($data) {
+	function actualizar($data) {
 		$this->db->set('codigo', $data['codigo']);
 		$this->db->set('nombre', $data['nombre']);
 
 		$this->db->where('id', $data['id']);
 		$this->db->update('sucursal');
+	}
+
+
+	function insertar($data) {
+		$this->db->set('companya_id', $data['companya_id']);
+		$this->db->set('codigo', $data['codigo']);
+		$this->db->set('nombre', $data['nombre']);
+	 	$this->db->insert('sucursal');
+	}
+
+	function eliminar($sucursal_id) {
+		$this->db->where('id', $sucursal_id);
+		$this->db->delete('sucursal');
 	}
 
 }

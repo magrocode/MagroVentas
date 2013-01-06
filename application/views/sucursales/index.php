@@ -9,6 +9,7 @@
         <div class="span10">
             <div class="page-header">
                 <h1>Sucursales</h1>
+                <a href="<?= site_url('sucursales/nuevo') ?>" class="btn btn-primary">Nueva sucursal</a>
             </div>
             <table class="table table-hover">
                 <thead>
@@ -25,9 +26,9 @@
                         <td><?= $s->nombre ?></td>
                         <td>
                             <small>
-                                <a href="#">Mostrar</a> | 
+                                <a href="<?= site_url("sucursales/mostrar/". $s->id ); ?>">Mostrar</a> | 
                                 <a href="<?= site_url("sucursales/editar/". $s->id ); ?>">Editar</a> | 
-                                <a href="#">Eliminar</a>
+                                <a href="<?= site_url("sucursales/eliminar/". $s->id ); ?>">Eliminar</a>
                             </small>
                         </td>
                     </tr>
@@ -37,22 +38,3 @@
         </div>
     </div>
 </div>
-
-<?php
-
-    $campos = array();
-
-    $this->campos["identificador"] = 123456;
-
-
-
-    echo "campos= " . $campos;
-
-    echo "identificador= " . $campos->identificador;
-
-    foreach ($campos as $row)
-    {
-       echo $row->identificador;
-    }
- 
-?>

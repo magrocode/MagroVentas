@@ -1,3 +1,8 @@
-<h3>Se envió correctamente su formulario!</h3>
-
-<p><?php echo anchor('form', '¡Inténtelo otra vez!'); ?></p>
+<div class="container-fluid">
+    <div class="row-fluid">
+    	<div class="alert alert-success">
+    		<button type="button" class="close" data-dismiss="alert">x</button>
+    		<?= $mensaje ?>
+    	</div>
+    </div>
+</div>

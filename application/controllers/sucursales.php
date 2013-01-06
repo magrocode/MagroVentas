@@ -10,6 +10,7 @@ class Sucursales extends CI_Controller {
 	}
 
 	function index() {
+
 		$this->load->model('sucursal_model'); //cargamos el modelo
 
  		$data['page_title'] = "Sucursales";
@@ -28,6 +29,9 @@ class Sucursales extends CI_Controller {
 
  	function nuevo()
  	{
+ 		//el id de la compañia oculto
+ 		$data['companya_id'] = $this->session->userdata('companya_id');
+
  		//reglas de validacion
  		$this->form_validation->set_rules('codigo', 'codigo', 'required|trim|max_length[20]');
  		$this->form_validation->set_rules('nombre', 'nombre', 'required|trim|min_length[5]'); 		
@@ -38,14 +42,14 @@ class Sucursales extends CI_Controller {
  			//vuelve al formulario para mostrar errores
  			$this->load->view('templates/header');
 			$this->load->view('templates/main_menu');
- 			$this->load->view('sucursales/nuevo');
+ 			$this->load->view('sucursales/nuevo', $data);
  			$this->load->view('templates/footer');
  		}
  		else
  		{
  			//inserta el nuevo registro
  			//recupera datos de la vista
-	 		$data['companya_id'] = 1;
+	 		$data['companya_id'] = $this->input->post('companya_id');
 	 		$data['codigo'] = $this->input->post('codigo');
 	 		$data['nombre'] = $this->input->post('nombre');
 
@@ -53,11 +57,12 @@ class Sucursales extends CI_Controller {
 	 		$this->load->model('sucursal_model');
 			$this->sucursal_model->insertar($data);
 
-			//carga vistas
-	 		$this->load->view('templates/header');
-			$this->load->view('templates/main_menu');
-	 		$this->load->view('sucursales/form_success', $data);
-	 		$this->load->view('templates/footer');
+			//mensaje exitoso
+			$mensaje['mensaje'] = "<strong>Asi se hace!</strong> Se ha insertado una nueva sucursal";
+			$this->load->view('templates/form_success', $mensaje);
+
+			//mostrar sucursal
+	 		$this->index();
 	 	}
  	}
 
@@ -69,42 +74,26 @@ class Sucursales extends CI_Controller {
 		$datos['sucursal'] = $this->sucursal_model->obtenerSucursal($suc);
 
 		$data['id'] = $datos['sucursal'][0]->id;
+		$data['companya_id'] = $datos['sucursal'][0]->companya_id;
 		$data['codigo'] = $datos['sucursal'][0]->codigo;
 		$data['nombre'] = $datos['sucursal'][0]->nombre;
 
-		//cargamos la vista para editar la información, pasandole dicha información.
-		/*$this->load->view('templates/header');
+		//cargar vistas
+ 		$this->load->view('templates/header');
 		$this->load->view('templates/main_menu');
 		$this->load->view('sucursales/editar', $data);
 		$this->load->view('templates/footer');
-*/
-
-		//reglas de validacion
- 		$this->form_validation->set_rules('codigo', 'codigo', 'required|trim|max_length[20]');
- 		$this->form_validation->set_rules('nombre', 'nombre', 'required|trim|min_length[5]'); 		
-
- 		//comprueba si pasa la validacion
- 		if($this->form_validation->run() == FALSE)
- 		{
- 			$this->load->view('templates/header');
-			$this->load->view('templates/main_menu');
- 			$this->load->view('sucursales/editar', $data);
- 			$this->load->view('templates/footer');
- 		}
- 		else
- 		{
- 			//guardar en la ddbb
- 			$this->actualizar();
- 		}
 
  	}
 
  	
  	function actualizar() {
 
-		
-		//volvemos a cargar la primera vista
-		//$this->index();
+ 		//recupera datos de la vista
+ 		$data['id'] = $this->input->post('id');
+	 	$data['companya_id'] = $this->input->post('companya_id');
+	 	$data['codigo'] = $this->input->post('codigo');
+	 	$data['nombre'] = $this->input->post('nombre');
 
 		//reglas de validacion
  		$this->form_validation->set_rules('codigo', 'codigo', 'required|trim|max_length[20]');
@@ -116,27 +105,22 @@ class Sucursales extends CI_Controller {
  			//vuelve al formulario para mostrar errores
  			$this->load->view('templates/header');
 			$this->load->view('templates/main_menu');
- 			$this->load->view('sucursales/editar');
+ 			$this->load->view('sucursales/editar', $data);
  			$this->load->view('templates/footer');
  		}
  		else
  		{
- 			//inserta el nuevo registro
- 			//recupera datos de la vista
- 			$data['id'] = $this->input->post('id');
-	 		$data['companya_id'] = 1;
-	 		$data['codigo'] = $this->input->post('codigo');
-	 		$data['nombre'] = $this->input->post('nombre');
 
 	 		//carga modelo e inserta el registro
 	 		$this->load->model('sucursal_model');
 			$this->sucursal_model->actualizar($data);
 
-			//carga vistas
-	 		$this->load->view('templates/header');
-			$this->load->view('templates/main_menu');
-	 		$this->load->view('sucursales/form_success', $data);
-	 		$this->load->view('templates/footer');
+			//mensaje exitoso
+			$mensaje['mensaje'] = "<strong>Muy Bien!</strong> Se ha actualizado la sucursal";
+			$this->load->view('templates/form_success', $mensaje);
+
+			//mostrar sucursal
+	 		$this->mostrar($data['id']);
 	 	}
 	}
 
@@ -168,7 +152,11 @@ class Sucursales extends CI_Controller {
 	}
 
 
-// validacion del permisos
+
+	/*
+	* VALIDACION DE PERMISOS
+	*/
+
 	private function check_isvalidated(){
 		// valida el estado de la sesion
 		if(! $this->session->userdata('validated')){

@@ -20,6 +20,7 @@
 			    	<div class="controls">
 			      		<?php echo form_input(array('name' => 'codigo', 'id' => 'codigo', 'size' => '50', 'value' => set_value('codigo', $codigo))) ?>
 			      		<?php echo form_input(array('type' => 'hidden', 'name' => 'id', 'id' => 'id', 'size' => '50', 'value' => set_value('id', $id))) ?>
+			      		<?php echo form_input(array('type' => 'hidden', 'name' => 'companya_id', 'id' => 'companya_id', 'size' => '50', 'value' => set_value('companya_id', $companya_id))) ?>
 			    	</div>
 			  	</div>
 			  	<div class="control-group">

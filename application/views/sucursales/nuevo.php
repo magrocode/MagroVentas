@@ -19,6 +19,7 @@
 			    	<?php echo form_label('Codigo: ', 'codigo', array('class' => 'control-label', 'for' => 'codigo')) ?>
 			    	<div class="controls">
 			      		<?php echo form_input(array('name' => 'codigo', 'id' => 'codigo', 'size' => '50', 'value' => set_value('codigo'))) ?>
+			      		<?php echo form_input(array('type' => 'hidden', 'name' => 'companya_id', 'id' => 'companya_id', 'size' => '50', 'value' => set_value('companya_id', $companya_id))) ?>
 			    	</div>
 			  	</div>
 			  	<div class="control-group">

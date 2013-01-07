@@ -11,21 +11,15 @@
 						<a href="#">Clientes</a>
 					</li>				
 					<li>
-						<a href="<?= site_url("productos"); ?>">Productos</a>
+						<?= anchor('productos', 'Productos'); ?>
 					</li>
 					<li>
-						<a href="<?= site_url("proveedores"); ?>">Proveedores</a>
-					</li>
-					<li>
-						<a href="<?= site_url("sucursales"); ?>">Sucursales</a>
-					</li>
-					<li>
-						<a href="#">Empleados</a>
+						<?= anchor('proveedores', 'Proveedores'); ?>
 					</li>
 				</ul>
 				<ul class="nav pull-right">
 					<li>
-						<a href="#"><?= $this->session->userdata('nombre_companya'); ?></a>
+						<?= anchor('companyas/mostrar/'.$this->session->userdata('companya_id'), $this->session->userdata('nombre_companya')); ?>
 					</li>
 					<li class="dropdown">											
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">

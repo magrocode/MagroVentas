@@ -1,10 +1,7 @@
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span2">
-            <ul class="nav nav-tabs nav-stacked">
-                <li><a href="#">Uno</a></li>
-                <li><a href="#">Dos</a></li>
-            </ul>
+            <?= $this->load->view('companyas/menu_companya'); ?> 
         </div>
         <div class="span10">
             <div class="page-header">

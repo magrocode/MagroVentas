@@ -5,12 +5,14 @@
         </div>
         <div class="span10">
             <div class="page-header">
-                <h1>Sucursal</h1>
+                <h1>Compan&iacute;a</h1>
             </div>
-            <p>Codigo: <?= $codigo; ?></p>
+            <p>Rut: <?= $rut; ?></p>
             <p>Nombre: <?= $nombre; ?></p>
+            <p>Direccion: <?= $direccion; ?></p>
             <br />
-            <?php echo anchor('sucursales', 'Volver a las sucursales') ?>
+            <?= anchor('companyas/editar/'.$id, 'Editar') ?>
         </div>
     </div>
 </div>
+

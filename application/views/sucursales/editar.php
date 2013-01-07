@@ -32,7 +32,7 @@
 			  	<div class="form-actions">
 
 					<?php echo form_submit(array('name' => 'enviar', 'value' => 'Enviar', 'class' => 'btn btn-primary')) ?>
-					<button type="button" class="btn">Cancelar</button>
+					o <?= anchor('sucursales', 'Volver a las sucursales') ?>
 				</div>
 			<?php echo form_close() ?>
         </div>

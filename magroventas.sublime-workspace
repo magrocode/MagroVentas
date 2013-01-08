@@ -436,42 +436,26 @@
 	"buffers":
 	[
 		{
-			"file": "application/controllers/companyas.php",
+			"file": "application/controllers/usuarios.php",
 			"settings":
 			{
-				"buffer_size": 2871,
+				"buffer_size": 906,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "application/views/companyas/editar.php",
+			"file": "application/views/usuarios/index.php",
 			"settings":
 			{
-				"buffer_size": 2028,
+				"buffer_size": 1727,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "application/models/companya_model.php",
+			"file": "application/models/usuario_model.php",
 			"settings":
 			{
-				"buffer_size": 719,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/templates/main_menu.php",
-			"settings":
-			{
-				"buffer_size": 1109,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/companyas/mostrar.php",
-			"settings":
-			{
-				"buffer_size": 537,
+				"buffer_size": 473,
 				"line_ending": "Unix"
 			}
 		},
@@ -479,7 +463,7 @@
 			"file": "application/views/companyas/menu_companya.php",
 			"settings":
 			{
-				"buffer_size": 253,
+				"buffer_size": 251,
 				"line_ending": "Unix"
 			}
 		},
@@ -560,8 +544,14 @@
 	},
 	"file_history":
 	[
-		"/opt/lampp/htdocs/magroventas/application/views/companya/mostrar.php",
+		"/opt/lampp/htdocs/magroventas/application/views/companyas/menu_companya.php",
+		"/opt/lampp/htdocs/magroventas/application/views/companyas/mostrar.php",
 		"/opt/lampp/htdocs/magroventas/application/views/templates/main_menu.php",
+		"/opt/lampp/htdocs/magroventas/application/models/companya_model.php",
+		"/opt/lampp/htdocs/magroventas/application/views/companyas/editar.php",
+		"/opt/lampp/htdocs/magroventas/application/controllers/companyas.php",
+		"/opt/lampp/htdocs/magroventas/application/views/companyas/index.php",
+		"/opt/lampp/htdocs/magroventas/application/views/companya/mostrar.php",
 		"/opt/lampp/htdocs/magroventas/application/views/sucursales/index.php",
 		"/opt/lampp/htdocs/magroventas/application/views/sucursales/nuevo.php",
 		"/opt/lampp/htdocs/magroventas/application/controllers/sucursales.php",
@@ -681,13 +671,7 @@
 		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_menu_unidad.html.erb",
 		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/show_usuarios_autorizados.html.erb",
 		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/show_vinculadas.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/index.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/unidads/_unidads_module_col.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/usuarios/_usuarios_module_col.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_profile_header.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/shared/_feed_post.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_administrador.html.erb",
-		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/_menu_comunidads.html.erb"
+		"/home/codelious/railsprojects/comunidadmanager/app/views/comunidads/index.html.erb"
 	],
 	"find":
 	{
@@ -782,106 +766,28 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/companyas.php",
+					"file": "application/controllers/usuarios.php",
 					"settings":
 					{
-						"buffer_size": 2871,
+						"buffer_size": 906,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2640,
-								2640
+								90,
+								90
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/views/companyas/editar.php",
-					"settings":
-					{
-						"buffer_size": 2028,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1949,
-								1949
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 353.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "application/models/companya_model.php",
-					"settings":
-					{
-						"buffer_size": 719,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								711,
-								711
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 187.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/views/templates/main_menu.php",
-					"settings":
-					{
-						"buffer_size": 1109,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								513,
-								513
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -891,19 +797,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "application/views/companyas/mostrar.php",
+					"buffer": 1,
+					"file": "application/views/usuarios/index.php",
 					"settings":
 					{
-						"buffer_size": 537,
+						"buffer_size": 1727,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								497,
-								497
+								1199,
+								1199
+							],
+							[
+								1309,
+								1309
+							],
+							[
+								1473,
+								1473
 							]
 						],
 						"settings":
@@ -913,25 +827,51 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "application/views/companyas/menu_companya.php",
+					"buffer": 2,
+					"file": "application/models/usuario_model.php",
 					"settings":
 					{
-						"buffer_size": 253,
+						"buffer_size": 473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/companyas/menu_companya.php",
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
 							]
 						],
 						"settings":
@@ -951,7 +891,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "application/controllers/sucursales.php",
 					"settings":
 					{
@@ -962,8 +902,8 @@
 						"selection":
 						[
 							[
-								3831,
-								3831
+								731,
+								731
 							]
 						],
 						"settings":
@@ -972,13 +912,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1785.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "application/models/sucursal_model.php",
 					"settings":
 					{
@@ -989,8 +929,8 @@
 						"selection":
 						[
 							[
-								723,
-								723
+								479,
+								479
 							]
 						],
 						"settings":
@@ -999,13 +939,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 6,
 					"file": "application/views/sucursales/mostrar.php",
 					"settings":
 					{
@@ -1033,7 +973,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 7,
 					"file": "application/views/sucursales/nuevo.php",
 					"settings":
 					{
@@ -1059,7 +999,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 8,
 					"file": "application/views/sucursales/editar.php",
 					"settings":
 					{
@@ -1085,7 +1025,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 9,
 					"file": "application/views/sucursales/index.php",
 					"settings":
 					{
@@ -1096,8 +1036,8 @@
 						"selection":
 						[
 							[
-								147,
-								147
+								1716,
+								1716
 							]
 						],
 						"settings":
@@ -1107,7 +1047,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 571.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1148,7 +1088,7 @@
 		"rows":
 		[
 			0.0,
-			0.313918305598,
+			0.755673222391,
 			1.0
 		]
 	},
@@ -1178,6 +1118,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 318.0,
+	"side_bar_width": 237.0,
 	"status_bar_visible": true
 }

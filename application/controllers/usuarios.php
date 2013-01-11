@@ -33,8 +33,8 @@ class Usuarios extends CI_Controller {
 
  		//reglas de validacion
  		$this->form_validation->set_rules('email', 'email', 'required|valid_email|trim|callback_check_email_unico');
- 		$this->form_validation->set_rules('nombre', 'nombre', 'required|trim|min_length[5]'); 		
- 		$this->form_validation->set_rules('apellidos', 'apellidos', 'required|trim|min_length[5]');
+ 		$this->form_validation->set_rules('nombre', 'nombre', 'required|trim'); 		
+ 		$this->form_validation->set_rules('apellidos', 'apellidos', 'required|trim');
  		$this->form_validation->set_rules('password', 'password', 'required|trim|min_length[6]|matches[confirmacion]');
  		$this->form_validation->set_rules('confirmacion', 'confirmacion', 'required|trim|min_length[6]');
  	
@@ -70,6 +70,74 @@ class Usuarios extends CI_Controller {
 	 		$this->index();
 	 	}
  	}
+
+ 	function editar($suc)
+ 	{
+ 		//cargamos el modelo y obtenemos la información del contacto seleccionado.
+		$this->load->model('usuario_model');
+		$datos['usuario'] = $this->usuario_model->obtener($suc);
+
+		$data['id'] = $datos['usuario'][0]->id;
+		$data['companya_id'] = $datos['usuario'][0]->companya_id;
+		$data['email'] = $datos['usuario'][0]->email;
+		$data['nombre'] = $datos['usuario'][0]->nombre;
+		$data['apellidos'] = $datos['usuario'][0]->apellidos;
+
+		//cargar vistas
+ 		$this->load->view('templates/header');
+		$this->load->view('templates/main_menu');
+		$this->load->view('usuarios/editar', $data);
+		$this->load->view('templates/footer');
+
+ 	}
+
+	function actualizar() {
+
+ 		//recupera datos de la vista
+ 		$data['id'] = $this->input->post('id');
+	 	$data['companya_id'] = $this->input->post('companya_id');
+	 	$data['email'] = $this->input->post('email');
+	 	$data['nombre'] = $this->input->post('nombre');
+	 	$data['apellidos'] = $this->input->post('apellidos');
+	 	$data['password'] = do_hash(do_hash($this->input->post('password')), 'md5'); 	 	
+
+ 		//reglas de validacion
+ 		$this->form_validation->set_rules('email', 'email', 'required|valid_email|trim');
+ 		$this->form_validation->set_rules('nombre', 'nombre', 'required|trim'); 		
+ 		$this->form_validation->set_rules('apellidos', 'apellidos', 'required|trim');
+ 		$this->form_validation->set_rules('password', 'password', 'required|trim|min_length[6]|matches[confirmacion]');
+ 		$this->form_validation->set_rules('confirmacion', 'confirmacion', 'required|trim|min_length[6]');		
+
+ 		//comprueba si pasa la validacion para insertar el registro
+ 		if($this->form_validation->run() == FALSE)
+ 		{
+ 			//vuelve al formulario para mostrar errores
+ 			$this->load->view('templates/header');
+			$this->load->view('templates/main_menu');
+ 			$this->load->view('usuarios/editar', $data);
+ 			$this->load->view('templates/footer');
+ 		}
+ 		else
+ 		{
+
+	 		//carga modelo e inserta el registro
+	 		$this->load->model('usuario_model');
+			$this->usuario_model->actualizar($data);
+
+			//mensaje exitoso
+			$mensaje['mensaje'] = "<strong>Muy Bien!</strong> Se ha actualizado el usuario";
+			$this->load->view('templates/form_success', $mensaje);
+
+			//mostrar usuario
+	 		//$this->mostrar($data['id']);
+	 		$this->index();
+	 	}
+	}
+
+
+ 	/*
+ 	* validacion de formularios personalizada
+ 	*/
 
  	function check_email_unico($email)
     {

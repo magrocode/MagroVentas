@@ -31,7 +31,7 @@ function confirma_eliminar(){
                     <?php foreach ($usuarios as $usuario):?>
                     <tr>
                         <td><?= $usuario->email ?></td>
-                        <td><?= $usuario->nombre ?></td>
+                        <td><?= $usuario->nombre ?> <?= $usuario->apellidos ?></td>
                         <td>
                             <small>
                                 <a href="<?= site_url("usuarios/mostrar/". $usuario->id ); ?>">Mostrar</a> | 

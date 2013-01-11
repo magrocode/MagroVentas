@@ -439,7 +439,23 @@
 			"file": "application/controllers/usuarios.php",
 			"settings":
 			{
-				"buffer_size": 906,
+				"buffer_size": 5369,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/usuarios/nuevo.php",
+			"settings":
+			{
+				"buffer_size": 2789,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/usuarios/editar.php",
+			"settings":
+			{
+				"buffer_size": 3015,
 				"line_ending": "Unix"
 			}
 		},
@@ -447,7 +463,7 @@
 			"file": "application/views/usuarios/index.php",
 			"settings":
 			{
-				"buffer_size": 1727,
+				"buffer_size": 1754,
 				"line_ending": "Unix"
 			}
 		},
@@ -455,7 +471,7 @@
 			"file": "application/models/usuario_model.php",
 			"settings":
 			{
-				"buffer_size": 473,
+				"buffer_size": 1701,
 				"line_ending": "Unix"
 			}
 		},
@@ -464,6 +480,22 @@
 			"settings":
 			{
 				"buffer_size": 251,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/sesion.php",
+			"settings":
+			{
+				"buffer_size": 1153,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/sesion_model.php",
+			"settings":
+			{
+				"buffer_size": 1690,
 				"line_ending": "Unix"
 			}
 		},
@@ -544,6 +576,7 @@
 	},
 	"file_history":
 	[
+		"/opt/lampp/htdocs/magroventas/application/views/templates/header.php",
 		"/opt/lampp/htdocs/magroventas/application/views/companyas/menu_companya.php",
 		"/opt/lampp/htdocs/magroventas/application/views/companyas/mostrar.php",
 		"/opt/lampp/htdocs/magroventas/application/views/templates/main_menu.php",
@@ -580,7 +613,6 @@
 		"/opt/lampp/htdocs/magroventas/application/config/autoload.php",
 		"/opt/lampp/htdocs/magroventas/application/config/database.php",
 		"/opt/lampp/htdocs/magroventas/application/views/sesiones/new.php",
-		"/opt/lampp/htdocs/magroventas/application/views/templates/header.php",
 		"/opt/lampp/htdocs/cloudapolis/application/views/templates/header.php",
 		"/opt/lampp/htdocs/cloudapolis/application/controllers/paginas.php",
 		"/opt/lampp/htdocs/magroventas/application/views/paginas/home_view.php",
@@ -766,7 +798,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -774,57 +806,48 @@
 					"file": "application/controllers/usuarios.php",
 					"settings":
 					{
-						"buffer_size": 906,
+						"buffer_size": 5369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								90,
-								90
+								3607,
+								3607
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 23.0,
+						"translation.y": 1315.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/views/usuarios/index.php",
+					"file": "application/views/usuarios/nuevo.php",
 					"settings":
 					{
-						"buffer_size": 1727,
+						"buffer_size": 2789,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1199,
-								1199
-							],
-							[
-								1309,
-								1309
-							],
-							[
-								1473,
-								1473
+								1740,
+								1740
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 360.0,
@@ -834,32 +857,87 @@
 				},
 				{
 					"buffer": 2,
-					"file": "application/models/usuario_model.php",
+					"file": "application/views/usuarios/editar.php",
 					"settings":
 					{
-						"buffer_size": 473,
+						"buffer_size": 3015,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								296,
-								296
+								831,
+								831
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 482.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "application/views/usuarios/index.php",
+					"settings":
+					{
+						"buffer_size": 1754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1089,
+								1089
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/models/usuario_model.php",
+					"settings":
+					{
+						"buffer_size": 1701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1550,
+								1550
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "application/views/companyas/menu_companya.php",
 					"settings":
 					{
@@ -883,27 +961,47 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 5,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 4,
-					"file": "application/controllers/sucursales.php",
+					"buffer": 6,
+					"file": "application/controllers/sesion.php",
 					"settings":
 					{
-						"buffer_size": 4906,
+						"buffer_size": 1153,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								731,
-								731
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/models/sesion_model.php",
+					"settings":
+					{
+						"buffer_size": 1690,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
 							]
 						],
 						"settings":
@@ -916,9 +1014,42 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "application/controllers/sucursales.php",
+					"settings":
+					{
+						"buffer_size": 4906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3831,
+								3831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1710.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 9,
 					"file": "application/models/sucursal_model.php",
 					"settings":
 					{
@@ -929,8 +1060,8 @@
 						"selection":
 						[
 							[
-								479,
-								479
+								1132,
+								1132
 							]
 						],
 						"settings":
@@ -939,13 +1070,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 10,
 					"file": "application/views/sucursales/mostrar.php",
 					"settings":
 					{
@@ -973,7 +1104,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 11,
 					"file": "application/views/sucursales/nuevo.php",
 					"settings":
 					{
@@ -984,8 +1115,8 @@
 						"selection":
 						[
 							[
-								151,
-								151
+								1671,
+								1671
 							]
 						],
 						"settings":
@@ -999,7 +1130,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 12,
 					"file": "application/views/sucursales/editar.php",
 					"settings":
 					{
@@ -1010,8 +1141,8 @@
 						"selection":
 						[
 							[
-								1841,
-								1841
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1019,13 +1150,13 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 276.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 13,
 					"file": "application/views/sucursales/index.php",
 					"settings":
 					{
@@ -1047,7 +1178,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 571.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1088,7 +1219,7 @@
 		"rows":
 		[
 			0.0,
-			0.755673222391,
+			0.849470499244,
 			1.0
 		]
 	},

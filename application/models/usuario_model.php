@@ -51,7 +51,7 @@ class Usuario_model extends CI_Model{
 		$this->db->delete('usuario');
 	}
 
-	function buscar_email($email) {
+	function email_en_uso($email) {
 		$this->db->select('id');
 		$this->db->from('usuario');
 		$this->db->where('email', $email);
@@ -61,6 +61,16 @@ class Usuario_model extends CI_Model{
 			return true;
 		elseif ($usuario->num_rows() == 0)
 			return false;
+	}
+
+	function get_id_from_email($email) {
+		$this->db->select('id');
+		$this->db->from('usuario');
+		$this->db->where('email', $email);
+		$query = $this->db->get();
+
+		$usuario = $query->row(0);
+		return $usuario->id;
 	}
 
 }

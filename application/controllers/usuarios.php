@@ -71,11 +71,11 @@ class Usuarios extends CI_Controller {
 	 	}
  	}
 
- 	function editar($suc)
+ 	function editar($usuario)
  	{
  		//cargamos el modelo y obtenemos la información del contacto seleccionado.
 		$this->load->model('usuario_model');
-		$datos['usuario'] = $this->usuario_model->obtener($suc);
+		$datos['usuario'] = $this->usuario_model->obtener($usuario);
 
 		$data['id'] = $datos['usuario'][0]->id;
 		$data['companya_id'] = $datos['usuario'][0]->companya_id;
@@ -87,8 +87,7 @@ class Usuarios extends CI_Controller {
  		$this->load->view('templates/header');
 		$this->load->view('templates/main_menu');
 		$this->load->view('usuarios/editar', $data);
-		$this->load->view('templates/footer');
-
+		$this->load->view('templates/footer');	
  	}
 
 	function actualizar() {
@@ -102,7 +101,7 @@ class Usuarios extends CI_Controller {
 	 	$data['password'] = do_hash(do_hash($this->input->post('password')), 'md5'); 	 	
 
  		//reglas de validacion
- 		$this->form_validation->set_rules('email', 'email', 'required|valid_email|trim');
+ 		$this->form_validation->set_rules('email', 'email', 'required|valid_email|trim|callback_check_email_unico_editando');
  		$this->form_validation->set_rules('nombre', 'nombre', 'required|trim'); 		
  		$this->form_validation->set_rules('apellidos', 'apellidos', 'required|trim');
  		$this->form_validation->set_rules('password', 'password', 'required|trim|min_length[6]|matches[confirmacion]');
@@ -134,7 +133,33 @@ class Usuarios extends CI_Controller {
 	 	}
 	}
 
+	function mostrar($usuario_id){
+		//carga modelo usuario
+		$this->load->model('usuario_model');
+		$datos['usuario'] = $this->usuario_model->obtener($usuario_id);
 
+		//recupera los campos
+		$data['id'] = $datos['usuario'][0]->id;
+		$data['companya_id'] = $datos['usuario'][0]->companya_id;
+		$data['email'] = $datos['usuario'][0]->email;
+		$data['nombre'] = $datos['usuario'][0]->nombre;
+		$data['apellidos'] = $datos['usuario'][0]->apellidos;
+
+		//carga vistas
+	 	$this->load->view('templates/header');
+		$this->load->view('templates/main_menu');
+	 	$this->load->view('usuarios/mostrar', $data);
+	 	$this->load->view('templates/footer');
+	}
+
+	function eliminar($usuario_id) {
+		//cargamos el modelo y llamamos a la función baja(), pasándole el nombre del registro que queremos borrar.
+		$this->load->model('usuario_model');
+		$this->usuario_model->eliminar($usuario_id);
+		
+		//mostramos la vista de nuevo.
+		$this->index();
+	}
  	/*
  	* validacion de formularios personalizada
  	*/
@@ -144,9 +169,26 @@ class Usuarios extends CI_Controller {
     	//carga modelo e inserta el registro
 	 	$this->load->model('usuario_model');
 
-        if ($this->usuario_model->buscar_email($email) == TRUE)
+        if ($this->usuario_model->email_en_uso($email) == TRUE)
         {
             $this->form_validation->set_message('check_email_unico', 'El email ya esta en uso.');
+            return FALSE;
+        }
+        else
+        {
+            return TRUE;
+        }
+    }
+
+    function check_email_unico_editando($email)
+    {
+    	$id = $this->input->post('id');
+    	//carga modelo e inserta el registro
+	 	$this->load->model('usuario_model');
+															 
+        if ($this->usuario_model->email_en_uso($email) == TRUE && $this->usuario_model->get_id_from_email($email) != $id)
+        {
+            $this->form_validation->set_message('check_email_unico_editando', 'El email ya esta en uso por otro usuario.');
             return FALSE;
         }
         else

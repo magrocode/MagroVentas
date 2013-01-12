@@ -15,7 +15,7 @@
 			  	<div class="control-group">
 			    	<?php echo form_label('Email: ', 'email', array('class' => 'control-label', 'for' => 'email')) ?>
 			    	<div class="controls">
-			      		<?php echo form_input(array('name' => 'email', 'id' => 'email', 'class' => 'uneditable-input', 'size' => '50', 'value' => set_value('email', $email))) ?>
+			      		<?php echo form_input(array('name' => 'email', 'id' => 'email', 'size' => '50', 'value' => set_value('email', $email))) ?>
 			      		<?php echo form_input(array('type' => 'hidden', 'name' => 'id', 'id' => 'id', 'size' => '50', 'value' => set_value('id', $id))) ?>
 			      		<?php echo form_input(array('type' => 'hidden', 'name' => 'companya_id', 'id' => 'companya_id', 'size' => '50', 'value' => set_value('companya_id', $companya_id))) ?>
 			    	</div>

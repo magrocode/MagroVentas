@@ -5,16 +5,16 @@
 			<div class="nav-collapse collapse navbar-inverse-collapse">
 				<ul class="nav">
 					<li>
-						<a href="#">Ordenes</a>
+						<a href="#">Ventas</a>
+					</li>
+					<li>
+						<a href="#">Compras</a>
 					</li>
 					<li>
 						<a href="#">Clientes</a>
 					</li>				
 					<li>
 						<?= anchor('productos', 'Productos'); ?>
-					</li>
-					<li>
-						<?= anchor('proveedores', 'Proveedores'); ?>
 					</li>
 				</ul>
 				<ul class="nav pull-right">

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Proveedores extends CI_Controller {
+class Productos extends CI_Controller {
 
     function __construct()
     {
@@ -11,19 +11,17 @@ class Proveedores extends CI_Controller {
 
     function index() {
 
-        $this->load->model('proveedor_model'); //cargamos el modelo
-
-        $data['page_title'] = "Proveedores";
+        $this->load->model('producto_model'); //cargamos el modelo
 
         //Obtener datos de la tabla 'contacto'
-        $proveedores = $this->proveedor_model->getData(); //llamamos a la función getData() del modelo creado anteriormente.
+        $productos = $this->producto_model->getData(); //llamamos a la función getData() del modelo creado anteriormente.
 
-        $data['proveedores'] = $proveedores;
+        $data['productos'] = $productos;
 
         //load de vistas
         $this->load->view('templates/header');
         $this->load->view('templates/main_menu');
-        $this->load->view('proveedores/index', $data); 
+        $this->load->view('productos/index', $data); 
         $this->load->view('templates/footer'); 
     }
 
@@ -33,7 +31,7 @@ class Proveedores extends CI_Controller {
         $data['companya_id'] = $this->session->userdata('companya_id');
 
         //reglas de validacion
-        $this->form_validation->set_rules('rut', 'rut', 'required|trim|max_length[20]');
+        $this->form_validation->set_rules('sku', 'sku', 'required|trim|max_length[20]');
         $this->form_validation->set_rules('nombre', 'nombre', 'required|trim|max_length[250]');       
 
         //comprueba si pasa la validacion para insertar el registro
@@ -42,7 +40,7 @@ class Proveedores extends CI_Controller {
             //vuelve al formulario para mostrar errores
             $this->load->view('templates/header');
             $this->load->view('templates/main_menu');
-            $this->load->view('proveedores/nuevo', $data);
+            $this->load->view('productos/nuevo', $data);
             $this->load->view('templates/footer');
         }
         else
@@ -50,15 +48,15 @@ class Proveedores extends CI_Controller {
             //inserta el nuevo registro
             //recupera datos de la vista
             $data['companya_id'] = $this->input->post('companya_id');
-            $data['rut'] = $this->input->post('rut');
+            $data['sku'] = $this->input->post('sku');
             $data['nombre'] = $this->input->post('nombre');
 
             //carga modelo e inserta el registro
-            $this->load->model('proveedor_model');
-            $this->proveedor_model->insertar($data);
+            $this->load->model('producto_model');
+            $this->producto_model->insertar($data);
 
             //mensaje exitoso
-            $mensaje['mensaje'] = "<strong>Asi se hace!</strong> Se ha insertado un nuevo proveedor";
+            $mensaje['mensaje'] = "<strong>Asi se hace!</strong> Se ha insertado un nuevo producto";
             $this->load->view('templates/form_success', $mensaje);
 
             //mostrar sucursal
@@ -67,21 +65,21 @@ class Proveedores extends CI_Controller {
     }
 
 
-    function editar($proveedor)
+    function editar($producto)
     {
         //cargamos el modelo y obtenemos la información del contacto seleccionado.
         $this->load->model('proveedor_model');
-        $datos['proveedor'] = $this->proveedor_model->obtener($proveedor);
+        $datos['producto'] = $this->proveedor_model->obtener($producto);
 
-        $data['id'] = $datos['proveedor'][0]->id;
-        $data['companya_id'] = $datos['proveedor'][0]->companya_id;
-        $data['rut'] = $datos['proveedor'][0]->rut;
-        $data['nombre'] = $datos['proveedor'][0]->nombre;
+        $data['id'] = $datos['producto'][0]->id;
+        $data['companya_id'] = $datos['producto'][0]->companya_id;
+        $data['sku'] = $datos['producto'][0]->sku;
+        $data['nombre'] = $datos['producto'][0]->nombre;
 
         //cargar vistas
         $this->load->view('templates/header');
         $this->load->view('templates/main_menu');
-        $this->load->view('proveedores/editar', $data);
+        $this->load->view('productos/editar', $data);
         $this->load->view('templates/footer');
 
     }
@@ -92,11 +90,11 @@ class Proveedores extends CI_Controller {
         //recupera datos de la vista
         $data['id'] = $this->input->post('id');
         $data['companya_id'] = $this->input->post('companya_id');
-        $data['rut'] = $this->input->post('rut');
+        $data['sku'] = $this->input->post('sku');
         $data['nombre'] = $this->input->post('nombre');
 
         //reglas de validacion
-        $this->form_validation->set_rules('rut', 'rut', 'required|trim|max_length[20]');
+        $this->form_validation->set_rules('sku', 'sku', 'required|trim|max_length[20]');
         $this->form_validation->set_rules('nombre', 'nombre', 'required|trim|max_length[250]');       
 
         //comprueba si pasa la validacion para insertar el registro
@@ -105,47 +103,47 @@ class Proveedores extends CI_Controller {
             //vuelve al formulario para mostrar errores
             $this->load->view('templates/header');
             $this->load->view('templates/main_menu');
-            $this->load->view('sucursales/editar', $data);
+            $this->load->view('productos/editar', $data);
             $this->load->view('templates/footer');
         }
         else
         {
 
             //carga modelo e inserta el registro
-            $this->load->model('proveedor_model');
-            $this->proveedor_model->actualizar($data);
+            $this->load->model('producto_model');
+            $this->producto_model->actualizar($data);
 
             //mensaje exitoso
-            $mensaje['mensaje'] = "<strong>Muy Bien!</strong> Se ha actualizado el proveedor";
+            $mensaje['mensaje'] = "<strong>Muy Bien!</strong> Se ha actualizado el producto";
             $this->load->view('templates/form_success', $mensaje);
 
-            //mostrar sucursal
+            //mostrar 
             $this->mostrar($data['id']);
         }
     }
 
-    function mostrar($proveedor){
-        //carga modelo proveedor
+    function mostrar($producto){
+        //carga modelo producto
         $this->load->model('proveedor_model');
-        $datos['proveedor'] = $this->proveedor_model->obtener($proveedor);
+        $datos['producto'] = $this->proveedor_model->obtener($producto);
 
         //recupera los campos
-        $data['id'] = $datos['proveedor'][0]->id;
-        $data['companya_id'] = $datos['proveedor'][0]->companya_id;
-        $data['rut'] = $datos['proveedor'][0]->rut;
-        $data['nombre'] = $datos['proveedor'][0]->nombre;
+        $data['id'] = $datos['producto'][0]->id;
+        $data['companya_id'] = $datos['producto'][0]->companya_id;
+        $data['sku'] = $datos['producto'][0]->sku;
+        $data['nombre'] = $datos['producto'][0]->nombre;
 
         //carga vistas
         $this->load->view('templates/header');
         $this->load->view('templates/main_menu');
-        $this->load->view('proveedores/mostrar', $data);
+        $this->load->view('productos/mostrar', $data);
         $this->load->view('templates/footer');
     }
 
-    function eliminar($proveedor_id) {
+    function eliminar($producto_id) {
         //cargamos el modelo y llamamos a la función baja(), pasándole el nombre del registro que queremos borrar.
-        $this->load->model('proveedor_model');
-        $this->proveedor_model->eliminar($proveedor_id);
+        $this->load->model('producto_model');
+        $this->producto_model->eliminar($producto_id);
         
         //mostramos la vista de nuevo.
         $this->index();

@@ -1,28 +1,48 @@
-
-<?php
-foreach($css_files as $file): ?>
-        <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
-
-<?php endforeach; ?>
-<?php foreach($js_files as $file): ?>
-
-        <script src="<?php echo $file; ?>"></script>
-<?php endforeach; ?>
+<script type="text/javascript">
+function confirma_eliminar(){
+    if (confirm("Realmente desea eliminar este producto?"))
+    {
+        return true
+    } else {
+        return false
+    }
+}
+</script>
 
 <div class="container-fluid">
-        <div class="row-fluid">
-                <div class="span2">
-                        <ul class="nav nav-tabs nav-stacked">
-                                <li><a href="#">Familias</a></li>
-                                <li><a href="#">Sub Familias</a></li>
-                        </ul>
-                </div>
-                <div class="span10">
-                        <div class="page-header">
-                                <h1>Productos</h1>
-                        </div>
-                        <?php echo $output; ?>
- 
-                </div>
+    <div class="row-fluid">
+        <div class="span2">
+            <?= $this->load->view('productos/menu_productos'); ?> 
         </div>
+        <div class="span10">
+            <div class="page-header">
+                <h1>Productos</h1>
+                <a href="<?= site_url('productos/nuevo') ?>" class="btn btn-primary">Nuevo producto</a>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Sku</th>
+                        <th>Nombre</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($productos as $producto):?>
+                    <tr>
+                        <td><?= $producto->sku ?></td>
+                        <td><?= $producto->nombre ?></td>
+                        <td>
+                            <small>
+                                <a href="<?= site_url("productos/mostrar/". $producto->id ); ?>">Mostrar</a> | 
+                                <a href="<?= site_url("productos/editar/". $producto->id ); ?>">Editar</a> | 
+                                <a onclick="if(confirma_eliminar() == false) return false" href="<?= site_url("productos/eliminar/". $producto->id ); ?>">Eliminar</a>
+                            </small>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

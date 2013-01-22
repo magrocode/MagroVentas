@@ -455,7 +455,15 @@
 			"file": "application/controllers/productos.php",
 			"settings":
 			{
-				"buffer_size": 5661,
+				"buffer_size": 5563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/producto_model.php",
+			"settings":
+			{
+				"buffer_size": 1225,
 				"line_ending": "Unix"
 			}
 		},
@@ -472,6 +480,14 @@
 			"settings":
 			{
 				"buffer_size": 1309,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/productos/index.php",
+			"settings":
+			{
+				"buffer_size": 1739,
 				"line_ending": "Unix"
 			}
 		},
@@ -775,7 +791,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -809,15 +825,15 @@
 					"file": "application/controllers/productos.php",
 					"settings":
 					{
-						"buffer_size": 5661,
+						"buffer_size": 5563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								593,
-								593
+								5331,
+								5331
 							]
 						],
 						"settings":
@@ -827,13 +843,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1794.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "application/models/producto_model.php",
+					"settings":
+					{
+						"buffer_size": 1225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								905,
+								905
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "application/controllers/subfamilias.php",
 					"settings":
 					{
@@ -861,7 +904,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "application/models/subfamilia_model.php",
 					"settings":
 					{
@@ -872,8 +915,8 @@
 						"selection":
 						[
 							[
-								411,
-								411
+								0,
+								0
 							]
 						],
 						"settings":
@@ -882,7 +925,35 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 39.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/views/productos/index.php",
+					"settings":
+					{
+						"buffer_size": 1739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -890,11 +961,11 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "application/controllers/sucursales.php",
 					"settings":
 					{
@@ -921,7 +992,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "application/models/sucursal_model.php",
 					"settings":
 					{
@@ -948,7 +1019,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "application/views/sucursales/mostrar.php",
 					"settings":
 					{
@@ -976,7 +1047,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "application/views/sucursales/nuevo.php",
 					"settings":
 					{
@@ -1002,7 +1073,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "application/views/sucursales/editar.php",
 					"settings":
 					{
@@ -1028,7 +1099,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "application/views/sucursales/index.php",
 					"settings":
 					{
